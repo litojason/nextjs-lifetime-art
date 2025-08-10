@@ -1,0 +1,35 @@
+{
+  "pill": "FAQs",
+  "title": "Answering Your Questions",
+  "description": "Got more questions? Send us your enquiry below",
+  "faqs": [
+    {
+      "title": "What area are you based in?",
+      "description": "We primarily serve London and the surrounding areas, but depending on the project, we can travel further. Contact us to discuss your location and requirements."
+    },
+    {
+      "title": "How long does a typical project take?",
+      "description": "Project timelines vary depending on size and complexity. We’ll provide an estimated schedule during your consultation and keep you updated throughout the process."
+    },
+    {
+      "title": "Do you offer free quotes?",
+      "description": "Yes, we offer free, no-obligation quotes. Our team will visit your property, assess your needs, and provide a detailed breakdown."
+    },
+    {
+      "title": "Will I need planning permission for my project?",
+      "description": "This depends on the type and scope of your project. We can guide you through local regulations and help with applications if needed."
+    },
+    {
+      "title": "Do you provide a guarantee for your work?",
+      "description": "Absolutely. All of our work is backed by a guarantee for quality and durability, giving you peace of mind."
+    },
+    {
+      "title": "Can I stay in my home while the work is being done?",
+      "description": "In most cases, yes—though it may depend on the scope of work and areas affected. We’ll discuss options to minimise disruption."
+    },
+    {
+      "title": "How do I get started with a project?",
+      "description": "Simply get in touch with our team. We’ll arrange a consultation, discuss your ideas, and prepare a tailored plan and quote."
+    }
+  ]
+}

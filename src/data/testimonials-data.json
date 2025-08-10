@@ -1,0 +1,28 @@
+{
+  "pill": "Testimonials",
+  "title": "Hear from our clients",
+  "description": "Hear from our happy clients about their experience working\nwith Refit and the quality of our craftsmanship.",
+  "testimonials": [
+    {
+      "review": "I couldn’t be happier with my loft conversion. The attention to detail and quality of work were outstanding. Refit made the whole process smooth and stress-free!",
+      "author": {
+        "image": "/avatars/avatar.png",
+        "name": "Emily Carter"
+      }
+    },
+    {
+      "review": "Refit transformed our outdoor space with a beautiful garden path. The work was completed on time, and the finish is excellent. A great team to work with!",
+      "author": {
+        "image": "/avatars/avatar.png",
+        "name": "Emily Carter"
+      }
+    },
+    {
+      "review": "Brilliant service from start to finish. The team was professional, communicative, and the results exceeded my expectations. My new bathroom looks amazing!",
+      "author": {
+        "image": "/avatars/avatar.png",
+        "name": "Emily Carter"
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "pill": "Our work",
+  "title": "Get inspired by our work",
+  "description": "See how we’ve transformed homes with our expert craftsmanship and attention to detail.",
+  "works": [
+    {
+      "image": "/images/works/kitchen.png",
+      "title": "Modern kitchen refit",
+      "description": "This kitchen transformation brought sleek, modern design and enhanced  functionality to our client’s home. We installed custom cabinetry, high-quality worktops, and state-of-the-art appliances, creating a stylish yet practical space perfect for cooking and entertaining. With attention to every detail, we delivered a kitchen that balances aesthetics and usability.",
+      "tags": ["Kitchen", "4 weeks"],
+      "quote": {
+        "text": "LifetimeArt completely transformed our kitchen, making it both beautiful and highly functional. The craftsmanship was outstanding, and the team was professional and communicative throughout. We couldn’t be happier with the result!",
+        "author": {
+          "image": "/avatars/avatar.png",
+          "name": "Rachel Morgan"
+        }
+      }
+    },
+    {
+      "image": "/images/works/kitchen.png",
+      "title": "External garden path build",
+      "description": "Our team designed and built a durable, visually appealing garden path to enhance the outdoor space. Using premium materials, we created a seamless walkway that blends naturally with the landscape, providing both functionality and aesthetic charm. The result is a stylish, well-crafted path that elevates the overall garden design.",
+      "tags": ["External Works", "6 weeks"],
+      "quote": {
+        "text": "The team at LifetimeArt did an amazing job on our garden path. It’s sturdy, looks fantastic, and has completely transformed our outdoor space. They listened to our vision and delivered exactly what we wanted—highly recommended!",
+        "author": {
+          "image": "/avatars/avatar.png",
+          "name": "Michael Turner"
+        }
+      }
+    },
+    {
+      "image": "/images/works/kitchen.png",
+      "title": "Bathroom renovation",
+      "description": "We revitalized this bathroom with a fresh, modern design, incorporating high-end tiling, sleek fixtures, and efficient lighting. The layout was optimized to maximize space, creating a luxurious and relaxing atmosphere. The final result is a beautifully crafted bathroom that enhances both comfort and functionality.",
+      "tags": ["Bathroom", "7 weeks"],
+      "quote": {
+        "text": "LifetimeArt completely transformed our kitchen, making it both beautiful and highly functional. The craftsmanship was outstanding, and the team was professional and communicative throughout. We couldn’t be happier with the result!",
+        "author": {
+          "image": "/avatars/avatar.png",
+          "name": "Laura Davies"
+        }
+      }
+    }
+  ]
+}
