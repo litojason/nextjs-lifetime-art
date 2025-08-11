@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import data from "@/data/services-data.json";
 import Pill from "@/components/pill";
-import Accordion from "@/components/accordion";
+import ServiceAccordion from "@/components/service-accordion";
 import FadeInFromBottom from "@/components/fade-in-from-bottom";
 
 const { pill, title, description, services } = data;
@@ -32,7 +32,7 @@ export default function Services() {
 
         <div className="flex-1">
           {services.map((item) => (
-            <Accordion key={item.title} data={item} />
+            <ServiceAccordion key={item.title} data={item} />
           ))}
         </div>
       </div>
