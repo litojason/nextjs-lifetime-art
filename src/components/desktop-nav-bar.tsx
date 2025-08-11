@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import Logo from "./logo";
 
 type DesktopNavBarProps = {
@@ -22,5 +23,16 @@ type NavItemProps = {
   name: string;
 };
 function NavItem({ name }: NavItemProps) {
-  return <li className="text-lg text-background p-2.5">{name}</li>;
+  return (
+    <li className="relative text-lg text-background p-2.5 group cursor-pointer">
+      {name}
+      <span
+        className={cn(
+          "absolute left-0 bottom-0 w-full h-0.5 bg-background",
+          "scale-x-0 group-hover:scale-x-100",
+          "transition-transform duration-300 ease-out"
+        )}
+      />
+    </li>
+  );
 }

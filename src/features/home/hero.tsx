@@ -3,6 +3,7 @@ import Image from "next/image";
 import data from "@/data/hero-data.json";
 import StatusPill from "@/components/status-pill";
 import CTAButton from "@/components/cta-button";
+import HeroText from "@/components/hero-text";
 
 export default function Hero() {
   const { title, description } = data;
@@ -23,12 +24,7 @@ export default function Hero() {
           <div className="space-y-6">
             <StatusPill>Available for work</StatusPill>
 
-            <h1 className="text-[3.5rem] whitespace-pre-line lg:whitespace-normal">
-              {title}
-            </h1>
-            <p className="text-xl text-hero-desc lg:whitespace-pre-line">
-              {description}
-            </p>
+            <HeroText lines={title.split("\n")} description={description} />
           </div>
 
           <CTAButton />
