@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 
-import Logo from "./logo";
+import Logo from "../logo";
 
 type MobileNavBarProps = {
   menus: string[];

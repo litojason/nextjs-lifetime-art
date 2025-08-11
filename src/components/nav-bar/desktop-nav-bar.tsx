@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import Logo from "./logo";
+import Logo from "../logo";
 
 type DesktopNavBarProps = {
   menus: string[];
