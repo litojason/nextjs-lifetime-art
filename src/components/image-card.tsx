@@ -16,7 +16,7 @@ export default function ImageCard({ data }: ImageCardProps) {
       alt={name}
       width={400}
       height={500}
-      className="w-80 h-100 2xl:w-100 2xl:h-125 object-cover"
+      className="snap-start shrink-0 w-80 h-100 2xl:w-100 2xl:h-125 object-cover"
     />
   );
 }
