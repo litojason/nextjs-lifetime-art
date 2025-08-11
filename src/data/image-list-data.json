@@ -1,0 +1,9 @@
+{
+  "images": [
+    { "name": "About us 1", "url": "/images/about-us/1.png" },
+    { "name": "About us 2", "url": "/images/about-us/2.png" },
+    { "name": "About us 3", "url": "/images/about-us/3.png" },
+    { "name": "About us 4", "url": "/images/about-us/4.png" },
+    { "name": "About us 5", "url": "/images/about-us/5.png" }
+  ]
+}

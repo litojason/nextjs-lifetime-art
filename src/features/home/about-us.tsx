@@ -9,10 +9,10 @@ export default function AboutUs() {
       <div className="flex-1 space-y-1">
         <Pill>{pill}</Pill>
 
-        <h2>{title}</h2>
+        <h2 className="text-[40px] font-medium whitespace-pre-line">{title}</h2>
       </div>
 
-      <p className="flex-1 text-gray">{description}</p>
+      <p className="flex-1 text-xl text-gray">{description}</p>
     </section>
   );
 }

@@ -1,5 +1,6 @@
 import Hero from "@/features/home/hero";
 import AboutUs from "@/features/home/about-us";
+import ImageList from "@/features/home/image-list";
 import Statistics from "@/features/home/statistics";
 import Services from "@/features/home/services";
 import OurWork from "@/features/home/our-work";
@@ -14,6 +15,8 @@ export default function Home() {
       <Hero />
 
       <AboutUs />
+
+      <ImageList />
 
       <Statistics />
 

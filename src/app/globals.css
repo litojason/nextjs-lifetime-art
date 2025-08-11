@@ -31,6 +31,11 @@
   --color-card: var(--card);
 }
 
+@theme {
+  --breakpoint-2xl: 90rem;
+  --breakpoint-3xl: 122.5rem;
+}
+
 @media (prefers-color-scheme: dark) {
   /* :root {
     --background: #0a0a0a;
