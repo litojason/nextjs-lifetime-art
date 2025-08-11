@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 
-import AccordionContent from "./accordion-content";
-import AccordionIcon from "./accordion-icon";
+import AccordionIcon from "@/components/accordion-icon";
+import AccordionContent from "@/components/accordion-content";
 
 type FaqAccordionProps = {
   data: {

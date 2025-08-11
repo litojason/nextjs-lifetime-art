@@ -7,7 +7,7 @@ import OurWork from "@/features/home/our-work";
 import Testimonials from "@/features/home/testimonials";
 import Faqs from "@/features/home/faqs";
 import Contact from "@/features/home/contact";
-import Footer from "@/features/home/footer";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (

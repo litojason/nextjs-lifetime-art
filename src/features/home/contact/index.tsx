@@ -2,8 +2,8 @@ import Image from "next/image";
 
 import data from "@/data/contact-data.json";
 import Pill from "@/components/pill";
-import SendMessageForm from "@/components/send-message-form";
 import FadeInFromBottom from "@/components/fade-in-from-bottom";
+import SendMessageForm from "./components/send-message-form";
 
 const { pill, title, description, contactInfo, social } = data;
 

@@ -1,7 +1,7 @@
 import data from "@/data/testimonials-data.json";
 import Pill from "@/components/pill";
-import TestimonialCard from "@/components/testimonial-card";
 import FadeInFromBottom from "@/components/fade-in-from-bottom";
+import TestimonialCard from "./components/testimonial-card";
 
 const { pill, title, description, testimonials } = data;
 

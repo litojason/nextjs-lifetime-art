@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Avatar from "./avatar";
+
+import Avatar from "@/components/avatar";
 
 type TestimonialCardProps = {
   data: {

@@ -1,7 +1,7 @@
 import data from "@/data/faqs-data.json";
 import Pill from "@/components/pill";
-import FaqAccordion from "@/components/faq-accordion";
 import FadeInFromBottom from "@/components/fade-in-from-bottom";
+import FaqAccordion from "./components/faq-accordion";
 
 const { pill, title, description, faqs } = data;
 
