@@ -1,0 +1,10 @@
+{
+  "quickLink": {
+    "title": "Quick links",
+    "data": [
+      [{ "name": "About us" }, { "name": "Our work" }, { "name": "Services" }],
+      [{ "name": "Testimonials" }, { "name": "FAQs" }, { "name": "Contact" }]
+    ]
+  },
+  "copyrightDesc": "© 2025 LifetimeArt. All rights reserved."
+}

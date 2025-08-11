@@ -1,0 +1,36 @@
+{
+  "pill": "Contact",
+  "title": "Get in touch",
+  "description": "For any inquiries or to explore your vision further, we invite  you to contact our professional team using the details provided below.",
+  "contactInfo": [
+    {
+      "title": "Office",
+      "description": "150 Old Park Ln, London W1K 1QZ"
+    },
+    {
+      "title": "Email",
+      "description": "hello@refit.com"
+    },
+    {
+      "title": "Telephone",
+      "description": "07716 534984"
+    }
+  ],
+  "social": {
+    "title": "Follow us",
+    "data": [
+      {
+        "name": "Instagram",
+        "icon": "/icons/social/instagram.svg"
+      },
+      {
+        "name": "TikTok",
+        "icon": "/icons/social/tiktok.svg"
+      },
+      {
+        "name": "X",
+        "icon": "/icons/social/new-twitter.svg"
+      }
+    ]
+  }
+}
