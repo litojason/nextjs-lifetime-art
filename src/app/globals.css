@@ -68,3 +68,13 @@ body {
     vertical-align: middle;
   }
 }
+
+@layer utilities {
+  .bg-dark-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(16, 16, 20, 0.8) 0%,
+      rgba(16, 16, 20, 0.8) 100%
+    );
+  }
+}

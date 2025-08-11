@@ -1,13 +1,13 @@
-import Image from "next/image";
+import Logo from "./logo";
 
 const navItems = ["About", "Services", "Our Work", "FAQs", "Contact"];
 
 export default function NavBar() {
   return (
-    <nav className="flex items-center justify-between w-full py-10 px-7.5 gap-7.5">
-      {/* <Image src="/logo.svg" alt="logo" /> */}
+    <nav className="flex items-center justify-between w-full py-10 px-7.5 bg-foreground">
+      <Logo />
 
-      <ul>
+      <ul className="flex gap-7.5">
         {navItems.map((item) => (
           <NavItem key={item} name={item} />
         ))}

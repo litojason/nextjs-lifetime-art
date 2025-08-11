@@ -1,6 +1,6 @@
-import Separator from "@/components/separator";
 import data from "@/data/footer-data.json";
-import Image from "next/image";
+import Logo from "@/components/logo";
+import Separator from "@/components/separator";
 
 const { quickLink, copyrightDesc } = data;
 
@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className="flex flex-col w-full px-5 gap-2">
       <div className="py-15 px-5 space-y-10 rounded-tl-xl rounded-tr-xl bg-foreground">
         <div className="flex flex-col items-start lg:flex-row lg:justify-between gap-10">
-          <Image src="/icons/logo.svg" alt="logo" width={154.8} height={32} />
+          <Logo />
 
           <div className="space-y-4">
             <h3 className="text-2xl font-medium text-background">
