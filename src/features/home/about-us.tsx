@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 import data from "@/data/about-us-data.json";
 import Pill from "@/components/pill";

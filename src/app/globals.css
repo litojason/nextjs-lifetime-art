@@ -12,6 +12,7 @@
   --border: #dbdad9;
   --border-card: #e6e6e6;
   --card: #e9ecf2;
+  --card-dark: #101014;
   --mobile-nav-overlay: rgba(0, 0, 0, 0.6);
 }
 
@@ -30,6 +31,7 @@
   --color-border: var(--border);
   --color-border-card: var(--border-card);
   --color-card: var(--card);
+  --color-card-dark: var(--card-dark);
   --color-mobile-nav-overlay: var(--mobile-nav-overlay);
 }
 

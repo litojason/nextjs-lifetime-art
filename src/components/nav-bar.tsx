@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 import DesktopNavBar from "./desktop-nav-bar";
 import MobileNavBar from "./mobile-nav-bar";

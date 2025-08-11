@@ -1,7 +1,7 @@
 import data from "@/data/our-work-data.json";
 import Pill from "@/components/pill";
-import WorkItem from "@/components/work-item";
 import FadeInFromBottom from "@/components/fade-in-from-bottom";
+import WorkItemList from "@/components/work-item-list";
 
 const { pill, title, description, works } = data;
 
@@ -17,11 +17,7 @@ export default function OurWork() {
         <span className="text-xl text-gray">{description}</span>
       </FadeInFromBottom>
 
-      <div className="space-y-5">
-        {works.map((item) => (
-          <WorkItem key={item.title} data={item} />
-        ))}
-      </div>
+      <WorkItemList works={works} />
     </section>
   );
 }

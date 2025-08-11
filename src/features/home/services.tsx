@@ -3,6 +3,7 @@ import Image from "next/image";
 import data from "@/data/services-data.json";
 import Pill from "@/components/pill";
 import ServiceAccordion from "@/components/service-accordion";
+import FadeInScaleUp from "@/components/fade-in-scale-up";
 import FadeInFromBottom from "@/components/fade-in-from-bottom";
 
 const { pill, title, description, services } = data;
@@ -20,7 +21,7 @@ export default function Services() {
       </FadeInFromBottom>
 
       <div className="flex flex-col md:flex-row gap-20">
-        <div className="flex-1">
+        <FadeInScaleUp className="flex-1">
           <Image
             src="/images/kitchen.png"
             alt="services"
@@ -28,7 +29,7 @@ export default function Services() {
             width={400}
             height={500}
           />
-        </div>
+        </FadeInScaleUp>
 
         <div className="flex-1">
           {services.map((item) => (
