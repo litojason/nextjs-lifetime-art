@@ -1,7 +1,7 @@
 import data from "@/data/our-work-data.json";
 import Pill from "@/components/pill";
 import FadeInFromBottom from "@/components/fade-in-from-bottom";
-import WorkItemList from "@/components/work-item-list";
+import WorkItemList from "./components/work-item-list";
 
 const { pill, title, description, works } = data;
 

@@ -1,8 +1,8 @@
 import Image from "next/image";
 
 import { cn } from "@/lib/utils";
-import Pill from "./pill";
-import Avatar from "./avatar";
+import Pill from "@/components/pill";
+import Avatar from "@/components/avatar";
 
 export type Work = {
   image: string;

@@ -3,8 +3,8 @@
 import { useState } from "react";
 import Image from "next/image";
 
-import AccordionContent from "./accordion-content";
-import AccordionIcon from "./accordion-icon";
+import AccordionIcon from "@/components/accordion-icon";
+import AccordionContent from "@/components/accordion-content";
 
 type ServiceAccordionProps = {
   data: {

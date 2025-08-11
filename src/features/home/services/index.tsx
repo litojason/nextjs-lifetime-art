@@ -2,9 +2,9 @@ import Image from "next/image";
 
 import data from "@/data/services-data.json";
 import Pill from "@/components/pill";
-import ServiceAccordion from "@/components/service-accordion";
 import FadeInScaleUp from "@/components/fade-in-scale-up";
 import FadeInFromBottom from "@/components/fade-in-from-bottom";
+import ServiceAccordion from "./components/service-accordion";
 
 const { pill, title, description, services } = data;
 
