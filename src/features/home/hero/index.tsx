@@ -1,8 +1,8 @@
 import data from "@/data/hero-data.json";
-import HeroImage from "@/components/hero-image";
-import StatusPill from "@/components/status-pill";
-import CTAButton from "@/components/cta-button";
-import HeroText from "@/components/hero-text";
+import HeroImage from "@/features/home/hero/components/hero-image";
+import StatusPill from "@/features/home/hero/components/status-pill";
+import CTAButton from "@/features/home/hero/components/cta-button";
+import HeroText from "@/features/home/hero/components/hero-text";
 
 export default function Hero() {
   const { title, description } = data;

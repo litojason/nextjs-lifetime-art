@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 
-import CarouselIndicator from "@/components/carousel-indicator";
-import ImageCard from "@/components/image-card";
 import data from "@/data/image-list-data.json";
+import CarouselIndicator from "@/components/carousel-indicator";
+import ImageCard from "./components/image-card";
 
 const { images } = data;
 

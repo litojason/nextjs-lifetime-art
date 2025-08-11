@@ -3,7 +3,7 @@
 import { PropsWithChildren } from "react";
 import { motion } from "motion/react";
 
-import Pill from "./pill";
+import Pill from "../../../../components/pill";
 
 export default function StatusPill({ children }: PropsWithChildren) {
   return (
