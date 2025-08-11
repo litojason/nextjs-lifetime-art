@@ -1,24 +1,14 @@
-import Logo from "./logo";
+import DesktopNavBar from "./desktop-nav-bar";
+import MobileNavBar from "./mobile-nav-bar";
 
-const navItems = ["About", "Services", "Our Work", "FAQs", "Contact"];
+const menus = ["About", "Services", "Our Work", "FAQs", "Contact"];
 
 export default function NavBar() {
   return (
-    <nav className="flex items-center justify-between w-full py-10 px-7.5 bg-foreground">
-      <Logo />
+    <div className="w-full bg-foreground">
+      <DesktopNavBar menus={menus} />
 
-      <ul className="flex gap-7.5">
-        {navItems.map((item) => (
-          <NavItem key={item} name={item} />
-        ))}
-      </ul>
-    </nav>
+      <MobileNavBar menus={menus} />
+    </div>
   );
-}
-
-type NavItemProps = {
-  name: string;
-};
-function NavItem({ name }: NavItemProps) {
-  return <li className="text-lg text-background p-2.5">{name}</li>;
 }
