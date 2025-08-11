@@ -4,6 +4,7 @@ import data from "@/data/services-data.json";
 import Pill from "@/components/pill";
 import FadeInScaleUp from "@/components/fade-in-scale-up";
 import FadeInFromBottom from "@/components/fade-in-from-bottom";
+import FadeInFromRight from "@/components/fade-in-from-right";
 import ServiceAccordion from "./components/service-accordion";
 
 const { pill, title, description, services } = data;
@@ -31,11 +32,11 @@ export default function Services() {
           />
         </FadeInScaleUp>
 
-        <div className="flex-1">
+        <FadeInFromRight className="flex-1">
           {services.map((item) => (
             <ServiceAccordion key={item.title} data={item} />
           ))}
-        </div>
+        </FadeInFromRight>
       </div>
     </section>
   );

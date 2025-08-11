@@ -9,7 +9,7 @@ const { pill, title, description, contactInfo, social } = data;
 
 export default function Contact() {
   return (
-    <section className="flex flex-col w-full px-5 gap-2">
+    <section id="contact" className="flex flex-col w-full px-5 gap-2">
       <div className="flex flex-col lg:flex-row items-center py-15 px-5 gap-25 rounded-xl bg-foreground">
         <FadeInFromBottom className="flex-1 w-full space-y-12">
           <div className="space-y-5">

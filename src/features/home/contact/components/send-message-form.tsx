@@ -10,7 +10,7 @@ export default function SendMessageForm() {
         placeholder="Hello, I'd like to enquire about..."
       />
 
-      {/* <Button>Send Message</Button> */}
+      <Button>Send Message</Button>
     </div>
   );
 }
@@ -55,7 +55,7 @@ function Button(props: React.ComponentProps<"button">) {
   return (
     <button
       {...props}
-      className="inline-flex items-center justify-center py-[11px] px-55 bg-foreground/75 rounded-md text-background font-medium"
+      className="inline-flex items-center justify-center w-full py-[11px] px-5 bg-foreground/75 rounded-md text-background font-medium"
     >
       {props.children}
     </button>

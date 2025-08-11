@@ -22,7 +22,7 @@ export default function HeroText({ lines, description }: HeroTextProps) {
         }}
         initial="hidden"
         animate="visible"
-        className="text-[3.5rem] font-medium"
+        className="text-[2.5rem] lg:text-[3.5rem] font-medium"
       >
         {lines.map((line, index) => (
           <motion.span
@@ -42,7 +42,7 @@ export default function HeroText({ lines, description }: HeroTextProps) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.2, delay: 0.4 }}
-        className="text-xl text-hero-desc"
+        className="text-base lg:text-xl text-hero-desc"
       >
         {description}
       </motion.p>
