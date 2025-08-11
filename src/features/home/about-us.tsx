@@ -5,12 +5,13 @@ import { motion } from "motion/react";
 import data from "@/data/about-us-data.json";
 import Pill from "@/components/pill";
 import FadeInFromBottom from "@/components/fade-in-from-bottom";
+import SectionContainer from "@/components/section-container";
 
 const { pill, title, description } = data;
 
 export default function AboutUs() {
   return (
-    <section className="flex flex-col md:flex-row w-full py-30 px-10 gap-20">
+    <SectionContainer className="flex flex-col md:flex-row w-full py-30 px-10 gap-20">
       <FadeInFromBottom className="flex-1 space-y-1">
         <Pill>{pill}</Pill>
 
@@ -26,6 +27,6 @@ export default function AboutUs() {
       >
         <p className="text-xl text-gray">{description}</p>
       </motion.div>
-    </section>
+    </SectionContainer>
   );
 }

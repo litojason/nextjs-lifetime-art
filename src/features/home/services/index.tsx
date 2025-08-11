@@ -5,13 +5,17 @@ import Pill from "@/components/pill";
 import FadeInScaleUp from "@/components/fade-in-scale-up";
 import FadeInFromBottom from "@/components/fade-in-from-bottom";
 import FadeInFromRight from "@/components/fade-in-from-right";
+import SectionContainer from "@/components/section-container";
 import ServiceAccordion from "./components/service-accordion";
 
 const { pill, title, description, services } = data;
 
 export default function Services() {
   return (
-    <section className="flex flex-col w-full py-30 px-10 gap-24 bg-light-gray">
+    <SectionContainer
+      sectionClassName="bg-light-gray"
+      className="flex flex-col w-full py-30 px-10 gap-24"
+    >
       <FadeInFromBottom className="space-y-4 text-center">
         <div className="space-y-2">
           <Pill>{pill}</Pill>
@@ -38,6 +42,6 @@ export default function Services() {
           ))}
         </FadeInFromRight>
       </div>
-    </section>
+    </SectionContainer>
   );
 }

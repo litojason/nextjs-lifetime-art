@@ -1,14 +1,15 @@
 import data from "@/data/hero-data.json";
-import HeroImage from "@/features/home/hero/components/hero-image";
-import StatusPill from "@/features/home/hero/components/status-pill";
-import CTAButton from "@/features/home/hero/components/cta-button";
-import HeroText from "@/features/home/hero/components/hero-text";
+import SectionContainer from "@/components/section-container";
+import HeroImage from "./components/hero-image";
+import StatusPill from "./components/status-pill";
+import HeroText from "./components/hero-text";
+import CTAButton from "./components/cta-button";
 
 export default function Hero() {
   const { title, description } = data;
 
   return (
-    <section className="p-5 pt-0 bg-hero-bg">
+    <SectionContainer sectionClassName="bg-hero-bg" className="p-5 pt-0">
       <div className="relative">
         <HeroImage />
 
@@ -24,6 +25,6 @@ export default function Hero() {
           <CTAButton />
         </div>
       </div>
-    </section>
+    </SectionContainer>
   );
 }

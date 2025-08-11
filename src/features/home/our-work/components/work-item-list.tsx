@@ -10,7 +10,7 @@ type WorkItemListProps = {
 
 export default function WorkItemList({ works }: WorkItemListProps) {
   return (
-    <div className="space-y-5">
+    <div className="space-y-5 2xl:space-y-0">
       {works.map((item, index) => (
         <motion.div
           key={item.title}
@@ -22,6 +22,7 @@ export default function WorkItemList({ works }: WorkItemListProps) {
           }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ delay: index * 0.2, duration: 0.2 }}
+          className="2xl:h-256"
         >
           <WorkItem data={item} mode={index % 2 === 0 ? "light" : "dark"} />
         </motion.div>

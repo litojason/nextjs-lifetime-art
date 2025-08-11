@@ -3,14 +3,18 @@ import Image from "next/image";
 import data from "@/data/contact-data.json";
 import Pill from "@/components/pill";
 import FadeInFromBottom from "@/components/fade-in-from-bottom";
+import SectionContainer from "@/components/section-container";
 import SendMessageForm from "./components/send-message-form";
 
 const { pill, title, description, contactInfo, social } = data;
 
 export default function Contact() {
   return (
-    <section id="contact" className="flex flex-col w-full px-5 gap-2">
-      <div className="flex flex-col lg:flex-row items-center py-15 px-5 gap-25 rounded-xl bg-foreground">
+    <SectionContainer className="flex flex-col w-full px-5 gap-2">
+      <div
+        id="contact"
+        className="flex flex-col lg:flex-row items-center py-15 px-5 gap-25 rounded-xl bg-foreground"
+      >
         <FadeInFromBottom className="flex-1 w-full space-y-12">
           <div className="space-y-5">
             <Pill>{pill}</Pill>
@@ -33,7 +37,7 @@ export default function Contact() {
           <SendMessageForm />
         </FadeInFromBottom>
       </div>
-    </section>
+    </SectionContainer>
   );
 }
 
