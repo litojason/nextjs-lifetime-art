@@ -22,7 +22,7 @@ export default function Statistics() {
             },
           },
         }}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-30 py-30 px-10"
+        className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-30 py-30 px-10"
       >
         {statistics.map((item) => (
           <StatisticItem key={item.title} data={item} />

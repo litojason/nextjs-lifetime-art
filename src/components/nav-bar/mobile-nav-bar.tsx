@@ -13,8 +13,8 @@ export default function MobileNavBar({ menus }: MobileNavBarProps) {
   const [visible, setVisible] = useState(false);
 
   return (
-    <nav className="lg:hidden w-full p-5 pb-0">
-      <div className="flex items-center justify-between py-[15px] px-5">
+    <nav className="flex flex-col lg:hidden justify-center w-full h-24 px-5">
+      <div className="flex items-center justify-between px-5">
         <Logo />
 
         <button

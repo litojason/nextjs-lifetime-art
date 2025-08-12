@@ -7,8 +7,8 @@ type DesktopNavBarProps = {
 
 export default function DesktopNavBar({ menus }: DesktopNavBarProps) {
   return (
-    <nav className="hidden lg:flex items-center justify-center">
-      <div className="flex items-center justify-between max-w-[90rem] w-full py-10 px-7.5">
+    <nav className="hidden lg:flex items-center justify-center h-24">
+      <div className="flex items-center justify-between max-w-[90rem] w-full px-7.5">
         <Logo />
 
         <ul className="flex gap-7.5">
