@@ -2,6 +2,7 @@ import data from "@/data/testimonials-data.json";
 import Pill from "@/components/pill";
 import FadeInFromBottom from "@/components/fade-in-from-bottom";
 import TestimonialCard from "./components/testimonial-card";
+import FadeInFromRight from "@/components/fade-in-from-right";
 
 const { pill, title, description, testimonials } = data;
 
@@ -17,11 +18,13 @@ export default function Testimonials() {
         <span className="text-xl text-gray">{description}</span>
       </FadeInFromBottom>
 
-      <div className="flex flex-col md:flex-row gap-4">
-        {testimonials.map((item) => (
-          <TestimonialCard key={item.review} data={item} />
-        ))}
-      </div>
+      <FadeInFromRight>
+        <div className="flex flex-col md:flex-row gap-4">
+          {testimonials.map((item) => (
+            <TestimonialCard key={item.review} data={item} />
+          ))}
+        </div>
+      </FadeInFromRight>
     </section>
   );
 }

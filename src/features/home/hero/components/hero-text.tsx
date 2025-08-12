@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { motion, stagger } from "motion/react";
 
 type HeroTextProps = {
   lines: string[];
@@ -16,12 +16,13 @@ export default function HeroText({ lines, description }: HeroTextProps) {
           visible: {
             opacity: 1,
             transition: {
-              staggerChildren: 0.1,
+              delayChildren: stagger(0.1),
             },
           },
         }}
         initial="hidden"
         whileInView="visible"
+        viewport={{ once: true }}
         className="text-[2.5rem] lg:text-[3.5rem] font-medium"
       >
         {lines.map((line, index) => (
@@ -42,6 +43,7 @@ export default function HeroText({ lines, description }: HeroTextProps) {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.2, delay: 0.4 }}
+        viewport={{ once: true }}
         className="text-base lg:text-xl text-hero-desc"
       >
         {description}

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { motion, stagger } from "motion/react";
 
 import statistics from "@/data/statistics-data.json";
 import SectionContainer from "@/components/section-container";
@@ -18,7 +18,7 @@ export default function Statistics() {
           visible: {
             opacity: 1,
             transition: {
-              staggerChildren: 0.2,
+              delayChildren: stagger(0.1),
             },
           },
         }}
