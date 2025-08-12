@@ -9,7 +9,10 @@ export default function Hero() {
   const { title, description } = data;
 
   return (
-    <SectionContainer sectionClassName="bg-hero-bg" className="p-5 pt-0">
+    <SectionContainer
+      sectionClassName="h-[calc(50.8125rem-6rem)] bg-hero-bg"
+      className="p-5 pt-0"
+    >
       <div className="relative">
         <HeroImage />
 

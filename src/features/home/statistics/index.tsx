@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { motion, stagger } from "motion/react";
 
 import statistics from "@/data/statistics-data.json";
 import SectionContainer from "@/components/section-container";
@@ -12,17 +12,17 @@ export default function Statistics() {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.5 }}
         variants={{
           hidden: { opacity: 0 },
           visible: {
             opacity: 1,
             transition: {
-              staggerChildren: 0.2,
+              delayChildren: stagger(0.1),
             },
           },
         }}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-30 py-30 px-10"
+        className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-30 py-30 px-10"
       >
         {statistics.map((item) => (
           <StatisticItem key={item.title} data={item} />

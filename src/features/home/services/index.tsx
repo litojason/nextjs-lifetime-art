@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 
 import data from "@/data/services-data.json";
@@ -11,6 +14,8 @@ import ServiceAccordion from "./components/service-accordion";
 const { pill, title, description, services } = data;
 
 export default function Services() {
+  const [serviceIndex, setServiceIndex] = useState(0);
+
   return (
     <SectionContainer
       sectionClassName="bg-light-gray"
@@ -25,22 +30,29 @@ export default function Services() {
         <span className="text-xl text-gray">{description}</span>
       </FadeInFromBottom>
 
-      <div className="flex flex-col md:flex-row gap-20">
-        <FadeInScaleUp className="flex-1">
+      <div className="flex flex-col md:flex-row items-center gap-20">
+        <FadeInScaleUp id={serviceIndex} className="flex-1 w-full">
           <Image
-            src="/images/kitchen.png"
-            alt="services"
-            className="rounded-xl"
+            src={services[serviceIndex].image}
+            alt={services[serviceIndex].title}
+            className="w-full rounded-xl"
             width={400}
             height={500}
           />
         </FadeInScaleUp>
 
-        <FadeInFromRight className="flex-1">
-          {services.map((item) => (
-            <ServiceAccordion key={item.title} data={item} />
-          ))}
-        </FadeInFromRight>
+        <div className="flex-1 w-full overflow-x-hidden">
+          <FadeInFromRight>
+            {services.map((item, i) => (
+              <ServiceAccordion
+                key={item.title}
+                data={item}
+                isExpanded={i === serviceIndex}
+                onClick={() => setServiceIndex(i)}
+              />
+            ))}
+          </FadeInFromRight>
+        </div>
       </div>
     </SectionContainer>
   );

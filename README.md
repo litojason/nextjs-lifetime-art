@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lifetime Art Home Page
+
+Lifetime Art Project built with [Typescript](https://www.typescriptlang.org/), [Next Js](https://nextjs.org/), [Tailwind](https://tailwindcss.com/), [Motion](https://motion.dev/) (animation).
+
+Working demo project: [https://nextjs-lifetime-art.vercel.app/](https://nextjs-lifetime-art.vercel.app/)
 
 ## Getting Started
 
