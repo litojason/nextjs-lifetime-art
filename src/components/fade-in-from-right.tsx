@@ -13,10 +13,10 @@ export default function FadeInFromRight({
 }: FadeInFromRightProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, translateX: 100, position: "absolute" }}
+      initial={{ opacity: 0, translateX: 20, position: "absolute" }}
       whileInView={{ opacity: 1, translateX: 0, position: "relative" }}
       transition={{ delay: 0.4, duration: 0.2, ease: "easeOut" }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true }}
       className={className}
     >
       {children}
