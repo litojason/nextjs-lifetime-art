@@ -2,6 +2,7 @@ import data from "@/data/faqs-data.json";
 import Pill from "@/components/pill";
 import FadeInFromBottom from "@/components/fade-in-from-bottom";
 import SectionContainer from "@/components/section-container";
+import FadeInFromRight from "@/components/fade-in-from-right";
 import FaqAccordion from "./components/faq-accordion";
 import GetInTouchButton from "./components/get-in-touch-button";
 
@@ -23,11 +24,11 @@ export default function Faqs() {
         </div>
       </FadeInFromBottom>
 
-      <FadeInFromBottom className="2xl:flex-2 space-y-5">
+      <FadeInFromRight className="2xl:flex-2 space-y-5">
         {faqs.map((item) => (
           <FaqAccordion key={item.title} data={item} />
         ))}
-      </FadeInFromBottom>
+      </FadeInFromRight>
     </SectionContainer>
   );
 }

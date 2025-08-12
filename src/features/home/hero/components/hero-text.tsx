@@ -21,7 +21,7 @@ export default function HeroText({ lines, description }: HeroTextProps) {
           },
         }}
         initial="hidden"
-        animate="visible"
+        whileInView="visible"
         className="text-[2.5rem] lg:text-[3.5rem] font-medium"
       >
         {lines.map((line, index) => (
